@@ -1,0 +1,357 @@
+.header {
+    
+    background-color: $pink;
+    
+    @media screen and (min-width: 320px) {
+        
+    }
+    
+}
+
+.logo__icon {
+    width: 200px;
+    height: 50px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .header__page {
+        padding-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .button {
+        display: none;
+    }
+    .button__modal {
+        width: 209px;
+        height: 44px;
+        margin-bottom: 32px;
+        margin-top: 40px;
+        &:hover {
+            background-color: #ECEBEB;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+
+    .burger {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 2;
+        background-color: transparent;
+
+        &__close {
+                display: block;
+            }
+        
+            &__open {
+                display: none;
+            }
+        
+            &.is-open &__close {
+                display: none;
+            }
+        
+            &.is-open &__open {
+                display: block;
+            }
+    } 
+
+    .burger__close-tab {
+        display: none;
+    }
+
+    .burger__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #E17992;
+
+        padding: 20px;
+
+        &.is-open {
+                display: none;
+            }
+    }
+
+    .nav__item {
+        display: block;
+    }
+
+    .nav__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.28;
+
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-top: 1px solid #E18298;
+    }
+
+    .button__modal {
+        display: block;
+        
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.3;
+        
+        align-items: center;
+        text-align: center;
+        
+        background-color: $white;
+        color: $red;
+        
+        border-radius: 22px;
+        border: $white;
+
+        &:hover {
+                background-color: #ECEBEB;
+            }
+    }
+    .button {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .burger__modal {
+        top: 0;
+        left: 70vw;
+    }
+    .logo {
+        margin-right: 293px;
+    }
+    .header__page {
+        position: relative;
+        padding-top: 32px;
+        display: flex;
+        align-items: center;
+    }
+        .button {
+            width: 160px;
+            height: 44px;
+        }
+    .button__modal {
+        width: 186px;
+        height: 44px;
+        margin-bottom: 32px;
+        margin-top: 40px;
+    }
+    .burger__close {
+        display: none;
+    }
+
+    .burger__close-tab {
+        position: absolute;
+        top: 20px;
+        right: 32px;
+    }
+    
+    .burger {
+        &__close-tab {
+                display: block;
+            }
+        
+            &__open {
+                display: none;
+            }
+        
+            &.is-open &__close-tab {
+                display: none;
+            }
+        
+            &.is-open &__open {
+                display: block;
+            }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__page {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav__item {
+            display: flex;  
+        }
+
+        .nav__list {
+            margin-right: 35px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .nav__link {
+            padding-top: 52px;
+            padding-bottom: 52px;
+        }
+    .button__modal {
+        display: none;
+    }
+    .burger{
+        display: none;
+    }
+    .button {
+        width: 160px;
+        height: 44px;
+    }
+}
+
+.nav__link {
+    display: block; 
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+        
+    &:hover {
+        color: $red;
+    }
+}
+.nav__current {
+    color: $red;
+}
+
+.button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+
+    align-items: center;
+    text-align: center;
+
+    background-color: $white;
+    color: $red;
+
+    border-radius: 22px;
+    border: $white;
+
+    &:hover {
+        background-color: #ECEBEB;
+    }
+}
+
+.button__element {
+    color: $red;
+}
+
+
+// Title HERO
+
+.title {
+    @media screen and (min-width: 320px) {
+        position: relative;
+        background-color: $pink;
+        background-image: url(../images/icecream-mob@1x.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(../images/icecream-mob@2x.png);
+    }
+}
+
+.title {
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/icecream-tab@1x.png);
+        background-position: center;
+        background-size: contain;
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+            background-image: url(../images/icecream-tab@2x.png);
+        }
+}
+
+.title__hero {
+    @media screen and (min-width: 320px) {
+        width: 218px;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.15;
+        text-transform: uppercase;
+        color: $white;
+
+        padding-top: 136px;
+        margin-bottom: 20px;
+
+        .title__hero--color {
+            color: $red;
+            font-size: 48px;
+            line-height: 1;
+        }
+
+        
+    } 
+}
+
+@media screen and (min-width: 320px) {
+    .title__item {
+            display: flex;
+            padding-bottom: 158px;
+        }
+    
+        .title__link {
+            display: inline-block;
+            width: 62.4px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 1.25;
+            color: $white;
+            background-color: $red;
+            border-radius: 20px;
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    
+        .title__link--color {
+            color: $red;
+            background-color: $white;
+            width: 82.8px;
+            height: 24px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .title__hero {
+        padding-top: 20px;
+    }
+    .title {
+        background-position: center;
+    }
+}
+
+
+.container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
