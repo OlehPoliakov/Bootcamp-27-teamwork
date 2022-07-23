@@ -289,7 +289,7 @@
 
 .title__hero {
     @media screen and (min-width: 320px) {
-        width: 218px;
+        width: 162px;
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
@@ -305,17 +305,14 @@
             color: $red;
             font-size: 48px;
             line-height: 1;
-        }
-
-        
+        }  
     } 
 }
 
 @media screen and (min-width: 320px) {
     .title__item {
             display: flex;
-        }
-    
+    }
         .title__link {
             display: inline-block;
             width: 62.4px;
@@ -339,6 +336,16 @@
             width: 82.8px;
             height: 24px;
         }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .location,
+    .header-image {
+        display: none;
+    }
+    .title__item {
+        padding-bottom: 158px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -372,20 +379,20 @@
     .header-image {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
         }
 }
 
 .milk-header__img {
     @media screen and (min-width: 768px) {
         margin-top: 20px;
+        padding-bottom: 16px;
     }
 }
 
 .milk-header__text {
     @media screen and (min-width: 768px) {
         width: 114px;
-        height: 48px;
     }
 }
 
@@ -424,6 +431,7 @@
         }
     
         .location__number {
+            position: relative;
             font-family: 'Titan One';
             font-weight: 400;
             font-size: 28px;
@@ -432,8 +440,17 @@
             text-transform: uppercase;
             color: $red;
         }
+    .location__icon {
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .girl-header {
+        display: block;
+    }
+}
 
 
