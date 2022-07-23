@@ -254,34 +254,37 @@
 // Title HERO
 
 .title {
-    @media screen and (min-width: 320px) {
-        position: relative;
-        background-color: $pink;
-        background-image: url(../images/icecream-mob@1x.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: contain;
-    }
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    background-color: $pink;
+    background-image: url(../images/icecream-mob@1x.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .title {
         background-image: url(../images/icecream-mob@2x.png);
     }
 }
 
-.title {
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .title {
         background-image: url(../images/icecream-tab@1x.png);
         background-position: center;
-        background-size: contain;
+        background-size: 335px 373px;
     }
+
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+        .title {
             background-image: url(../images/icecream-tab@2x.png);
         }
+    }
 }
 
 .title__hero {
@@ -311,7 +314,6 @@
 @media screen and (min-width: 320px) {
     .title__item {
             display: flex;
-            padding-bottom: 158px;
         }
     
         .title__link {
@@ -355,3 +357,83 @@
         padding-right: 32px;
     }
 }
+.milk-header {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.5;
+        color: $white;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-image {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+}
+
+.milk-header__img {
+    @media screen and (min-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+.milk-header__text {
+    @media screen and (min-width: 768px) {
+        width: 114px;
+        height: 48px;
+    }
+}
+
+.title__content {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.milk-header__icon {
+    @media screen and (min-width: 768px) {
+        fill: $red;
+        width: 18px;
+        height: 18px;
+        margin-top: 7px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .location {
+            margin-top: 16px;
+        }
+    
+        .location__text {
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 10px;
+            color: $white;
+            margin-bottom: 16px;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        .location__number {
+            font-family: 'Titan One';
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $red;
+        }
+}
+
+
+
+

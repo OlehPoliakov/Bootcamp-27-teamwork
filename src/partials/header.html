@@ -1,40 +1,62 @@
 <header class="header">
-    <div class="container header__page">
-        <a class="logo" href="">
-            <svg class="logo__icon">
-                <use href="./images/symbol-defs.svg#icon-icecream" width="200" height="50"></use>
-            </svg>
-        </a>
-        <button class="burger is-open" type="button" data-menu-button aria-expanded="false">
-            <svg width="20" height="15" aria-label="Переключатель мобильного меню">
-                <use class="burger__close" href="./images/symbol-defs.svg#icon-close"></use>
-                <use class="burger__open" href="./images/symbol-defs.svg#icon-Burger"></use>
-            </svg>
-            <svg class="burger__close-tab" width="14" height="14">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-            </svg>
-        </button>
-        <div class="burger__modal is-open" data-menu>
-            <nav class="nav">
-                <button class="button__modal" type="button">Buy now <span class="button__element"> > </span> </button>
-                <ul class="nav__item" >
-                    <li class="nav__list"><a class="nav__link nav__current" href="#Home">Home</a></li>
-                    <li class="nav__list"><a class="nav__link" href="#About us">About us</a></li>
-                    <li class="nav__list"><a class="nav__link" href="#How">How it’s made?</a></li>
-                    <li class="nav__list"><a class="nav__link" href="#products">Our products</a></li>
-                    <li class="nav__list"><a class="nav__link" href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <button class="button" type="button">Buy now <span class="button__element"> > </span> </button>
-    </div>
-</header>
-<section class="title">
     <div class="container">
-        <h1 class="title__hero">Ice cream made with <span class="title__hero--color">passion</span></h1>
-        <ul class="title__item">
-            <li class="title__list"><a class="title__link" href="">Products</a></li>
-            <li class="title__list"><a class="title__link title__link--color" href="">How it’s made?</a></li>
-        </ul>
-    </div>
-</section>
+        <div class="header__page">
+            <a class="logo" href="">
+                <svg class="logo__icon">
+                    <use href="./images/symbol-defs.svg#icon-icecream" width="200" height="50"></use>
+                </svg>
+            </a>
+            <button class="burger is-open" type="button" data-menu-button aria-expanded="false">
+                <svg width="20" height="15" aria-label="Переключатель мобильного меню">
+                    <use class="burger__close" href="./images/symbol-defs.svg#icon-close"></use>
+                    <use class="burger__open" href="./images/symbol-defs.svg#icon-Burger"></use>
+                </svg>
+                <svg class="burger__close-tab" width="14" height="14">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="burger__modal is-open" data-menu>
+                <nav class="nav">
+                    <button class="button__modal" type="button">Buy now <span class="button__element"> > </span> </button>
+                    <ul class="nav__item">
+                        <li class="nav__list"><a class="nav__link nav__current" href="#Home">Home</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#About us">About us</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#How">How it’s made?</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#products">Our products</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button class="button" type="button">Buy now <span class="button__element"> > </span> </button>
+        </div>
+        <section class="title">
+                <div class="title__content">
+                    <h1 class="title__hero">Ice cream made with <span class="title__hero--color">passion</span></h1>
+                    <ul class="location">
+                        <li class="location__number">16</li>
+                        <li class="location__text">cafes</li>
+                        <li class="location__number">23</li>
+                        <li class="location__text">food trucks</li>
+                    </ul>
+                </div>
+                <ul class="title__item">
+                    <li class="title__list"><a class="title__link" href="">Products</a></li>
+                    <li class="title__list"><a class="title__link title__link--color" href="">How it’s made?</a></li>
+                </ul>
+                <ul class="header-image">
+                    <li class="milk-header"><img class="milk-header__img" srcset="./images/milk-hed-tab.png 1x, ./images/milk-hed-tab@2x.png 2x"
+                        src="./images/milk-hed-tab.png" alt="jug of milk">
+                    <p class="milk-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et
+                        <svg class="milk-header__icon">
+                            <use href="./images/symbol-defs.svg#icon-white-circle"></use>
+                            <use href="./images/symbol-defs.svg#icon-arrow-prod"></use>
+                        </svg>
+                    </p>
+                    <li>
+                        <img srcset="./images/tastygirl.png 1x, ./images/tastygirl@2x.png 2x" src="./images/tastygirl.png" alt="girl"></li>
+                    </li>
+                </ul>
+        </section>
+    </div> 
+</header>
