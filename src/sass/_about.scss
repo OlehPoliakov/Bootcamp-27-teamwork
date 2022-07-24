@@ -96,17 +96,17 @@
 
   &__picture-box {
     margin-bottom: 40px;
-    min-width: 280px;
+    width: 280px;
 
     @media screen and (min-width: 768px) {
-      min-width: 366px;
+      width: 366px;
       justify-content: left;
       padding: 0;
       margin-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
-      min-width: 501px;
+      width: 501px;
       margin-right: 99px;
     }
   }
