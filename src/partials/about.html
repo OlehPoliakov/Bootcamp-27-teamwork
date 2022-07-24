@@ -1,38 +1,22 @@
 <section class="about">
   <div class="container">
     <p class="about__slogan">tradition and love</p>
-    <h2 class="about__heading">how it&apos;s made?</h2>
+    <h2 class="about__heading">how it's made?</h2>
     <div class="about__image-text-box">
       <div class="about__picture-box">
-        <picture>
-          <source
-            srcset="
-              ./images/cow-desktop/milk-pc@1x.png 1x,
-              ./images/cow-desktop/milk-pc@2x.png 2x"
-               media="(min-width: 1200px)"
-          />
-
-          <source
-            srcset="
-              ./images/cow-tablet/milk-tablet@1x.png 1x,
-              ./images/cow-tablet/milk-tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ./images/cow-mobile/milk-mob@1x.png 1x,
-              ./images/cow-mobile/milk-mob@2x.png 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img
-            class="about__image-cow"
-            src="./images/cow-mobile/milk-mob@1x.png"
-            alt="a jug of milk and a cow behind"
-            width="280"
-          />
-        </picture>
+        <img
+          class="about__image-cow"
+          srcset="
+            ./images/cow-desktop/milk-desktop@1x.png  501w,
+            ./images/cow-desktop/milk-desktop@2x.png 1002w,
+            ./images/cow-tablet/milk-tablet@1x.png    336w,
+            ./images/cow-tablet/milk-tablet@2x.png    732w,
+            ./images/cow-mobile/milk-mob@1x.png       280w,
+            ./images/cow-mobile/milk-mob@2x.png       560w
+          "
+          src="./images/cow-mobile/milk-mob@1x.png"
+          alt="a jug of milk and a cow behind"
+        />
       </div>
 
       <div class="about__text-box">
@@ -46,45 +30,17 @@
           Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt.
-          <p class="about__except--indent">Aliquam erat volutpat. Aenean accumsan.
-</p> 
-        </p> 
-          <button class="button-more" type="button">
-        Read more &nbsp;&nbsp;<span class="about-button-box__span-more">></span>
-      </button>
-      </div>
-    </div>
+        </p>
+        <p class="about__except-indent">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="button-more" type="button">
+          Read more
+
+          <svg class="button-more__vektor-svg" width="9px" height="11px">
+            <url href="./images/symbol-defs.svg#icon-arrowsmoll"></url>
+          </svg>
+        </button>
+      </div>  
   </div>
 </section>
-
-<!-- <div id="popup" class="popup">
-  <div class="popup__body">
-    <div class="popup__content">
-      <a href="#" class="popup__clouse close-popup">x</a>
-      <p class="popup__subtitle"></p>
-      <ul class="popup__list">
-        <li class="popup__item">
-          <p class="poup__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed
-            minima accusamus dolores ab recusandae delectus cum eaque modi quis
-            cupiditate illo hic aut nisi, at veniam, quae repellat! Ipsum?
-          </p>
-        </li>
-        <li class="popup__item">
-          <p class="poup__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed
-            minima accusamus dolores ab recusandae delectus cum eaque modi quis
-            cupiditate illo hic aut nisi, at veniam, quae repellat! Ipsum?
-          </p>
-        </li>
-        <li class="popup__item">
-          <p class="poup__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro sed
-            minima accusamus dolores ab recusandae delectus cum eaque modi quis
-            cupiditate illo hic aut nisi, at veniam, quae repellat! Ipsum?
-          </p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div> -->
