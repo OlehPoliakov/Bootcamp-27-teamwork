@@ -72,11 +72,10 @@
     min-width: 280px;
     background-image: url('../images/backround-milk-mob/sectionbg-mob@2x.png');
     background-repeat: no-repeat;
-    background-position: 0 395px;
+    background-position: 0 390px;
     background-size: contain;
 
     @media screen and (min-width: 768px) {
-      min-width: 768px;
       background-image: none;
       display: flex;
       justify-content: center;
@@ -102,7 +101,6 @@
       width: 366px;
       justify-content: left;
       padding: 0;
-      margin-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -113,7 +111,6 @@
 
   &__image-cow {
     max-width: 100%;
-    min-width: 280px;
     height: auto;
     display: block;
 
@@ -133,7 +130,7 @@
   }
 
   &__text {
-    width: 220px;
+    width: 230px;
     font-family: 'DM Sans';
     font-style: normal;
     text-align: left;
@@ -145,9 +142,9 @@
     color: $dark;
 
     @media screen and (min-width: 768px) {
-      width: 334px;
       font-size: 14px;
       line-height: 1.78;
+      width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -156,11 +153,12 @@
       font-size: 16px;
       line-height: 1.75;
       margin-bottom: 32px;
+      // height: 79px;
     }
   }
 
   &__except {
-    width: 220px;
+    width: 230px;
     font-family: 'DM Sans';
     font-style: normal;
     text-align: left;
@@ -172,7 +170,7 @@
     color: $gray;
 
     @media screen and (min-width: 768px) {
-      width: 334px;
+      width: 340px;
       margin-bottom: 20px;
       font-size: 14px;
       line-height: 1.76;
@@ -180,7 +178,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 463px;
+      width: 450px;
       margin-bottom: 30px;
       font-size: 14px;
       line-height: 1.93;
@@ -230,14 +228,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 37px;
-  padding-left: 37px;
+  padding-right: 35px;
+  padding-left: 35px;
 
   border-radius: 22px;
   background-color: $white;
   color: $red;
   cursor: pointer;
   border: none;
+  transition: background-color 250ms, color 250ms;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -245,8 +244,16 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: #ecebeb;
+    transform-style: preserve-3d;
+    transform: rotate 250ms;
+  }
+  &:active {
+    background-color: $red;
+    color: $white;
+    transform: rotate 250ms;
+    transform-style: preserve-3d;
   }
 
   &__vektor-svg {
@@ -255,8 +262,16 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
+    margin-left: 14px;
     fill: $red;
-
+    &:hover,
+    &:focus {
+      fill: $white;
+      transform-style: preserve-3d;
+    }
+    &:active {
+      fill: $white;
+    }
     @media screen and (min-width: 768px) {
       font-size: 16px;
       line-height: 1.31;
