@@ -1,4 +1,5 @@
 .header {
+    min-width: 320px;
     margin-bottom: -1px;
     background-color: $pink;
 }
@@ -51,6 +52,13 @@
             }
     }
 
+@media screen and(max-width: 767px) {
+    .burger {
+        position: fixed;
+        top: 6%;
+        right: 6%;
+    }
+}
 
 @media screen and (max-width: 1199px) {
 
@@ -166,9 +174,9 @@
     }
 
     .burger__close-tab {
-        position: absolute;
-        top: 20px;
-        right: 32px;
+        position: fixed;
+        top: 17%;
+        right: 30%;
     }
     
     .burger {
@@ -268,11 +276,12 @@
 // Title HERO
 
 .title {
+    min-width: 320px;
     background-color: $pink;
     background-image: url(../images/icecream-head.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 346px 410px;
 }
 
 @media (min-device-pixel-ratio: 2),
