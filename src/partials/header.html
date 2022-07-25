@@ -16,49 +16,68 @@
                 </svg>
             </button>
             <div class="burger__modal is-open" data-menu>
-                <nav class="nav">
-                    <button class="button__modal" type="button">Buy now <span class="button__element"> > </span> </button>
+                    <button class="button__modal" type="button">Buy now <svg class="button__element" width="9" height="11">
+                        <use href="./images/symbol-defs.svg#icon-arrowsmoll"></use>
+                    </svg> </button>
                     <ul class="nav__item">
                         <li class="nav__list"><a class="nav__link nav__current" href="#Home">Home</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#About us">About us</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#How">How it’s made?</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#about">About us</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#how">How it’s made?</a></li>
                         <li class="nav__list"><a class="nav__link" href="#products">Our products</a></li>
-                        <li class="nav__list"><a class="nav__link" href="#Contact">Contact</a></li>
+                        <li class="nav__list"><a class="nav__link" href="#contact">Contact</a></li>
                     </ul>
-                </nav>
             </div>
-            <button class="button" type="button">Buy now <span class="button__element"> > </span> </button>
+            <button class="button" type="button">Buy now 
+                <svg class="button__element" width="9" height="11"><use href="./images/symbol-defs.svg#icon-arrowsmoll"></use></svg>
+            </button>
         </div>
-        <section class="title">
-                <div class="title__content">
-                    <h1 class="title__hero">Ice cream made with <span class="title__hero--color">passion</span></h1>
-                    <ul class="location">
-                        <li class="location__number">16<svg class="location__icon" width="18" height="18"><use href="./images/symbol-defs.svg#icon-white-circle"></use></svg></li>
-                        <li class="location__text">cafes</li>
-                        <li class="location__number">23<svg class="location__icon" width="18" height="18">
-                            <use href="./images/symbol-defs.svg#icon-white-circle"></use>
-                        </svg></li>
-                        <li class="location__text">food trucks</li>
-                    </ul>
-                </div>
-                <ul class="title__item">
-                    <li class="title__list"><a class="title__link" href="">Products</a></li>
-                    <li class="title__list"><a class="title__link title__link--color" href="">How it’s made?</a></li>
-                </ul>
-                <ul class="header-image">
-                    <li class="milk-header"><img class="milk-header__img" srcset="./images/milk-hed-tab.png 1x, ./images/milk-hed-tab@2x.png 2x"
-                        src="./images/milk-hed-tab.png" alt="jug of milk">
-                    <p class="milk-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et
-                        <svg class="milk-header__icon">
-                            <use href="./images/symbol-defs.svg#icon-white-circle"></use>
-                            <use href="./images/symbol-defs.svg#icon-arrow-prod"></use>
-                        </svg>
-                    </p>
-                    <li>
-                        <img class="girl-header" srcset="./images/tastygirl.png 1x, ./images/tastygirl@2x.png 2x" src="./images/tastygirl.png" alt="girl"></li>
-                    </li>
-                </ul>
-        </section>
     </div> 
 </header>
+<main>
+    
+</main>
+<section class="title">
+    <div class="container">
+        <div class="title__content">
+            <h1 class="title__hero">Ice cream made with <span class="title__hero--color">passion</span></h1>
+            <ul class="location">
+                <li class="location__number">16
+                    <p class="location__icon">
+                        <svg class="location__icon--size">
+                            <use href="./images/symbol-defs.svg#icon-white-circle"></use>
+                        </svg>
+                    </p>
+                </li>
+                <li class="location__text">cafes</li>
+                <li class="location__number"> 23
+                    <p class="location__icon">
+                        <svg class="location__icon--size">
+                            <use href="./images/symbol-defs.svg#icon-white-circle"></use>
+                        </svg>
+                    </p>
+                </li>
+                <li class="location__text">food trucks</li>
+            </ul>
+        </div>
+        <ul class="title__item">
+            <li class="title__list"><a class="title__link" href="#products">Products</a></li>
+            <li class="title__list"><a class="title__link title__link--color" href="#how">How it’s made?</a></li>
+        </ul>
+        <ul class="header-image">
+            <li class="milk-header"><img class="milk-header__img"
+                    srcset="./images/milk-hed.png 1x, ./images/milk-hed@2x.png 2x" src="./images/milk-hed.png"
+                    alt="jug of milk">
+                <p class="milk-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et
+                    <svg class="milk-header__icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                    </svg>
+                </p>
+            <li>
+                <img class="girl-header" srcset="./images/tastygirl.png 1x, ./images/tastygirl@2x.png 2x"
+                    src="./images/tastygirl.png" alt="girl">
+            </li>
+            </li>
+        </ul>
+    </div>
+</section>
