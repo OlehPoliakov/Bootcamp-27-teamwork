@@ -3,6 +3,14 @@
   padding-bottom: 60px;
 }
 
+
+.products__icon:hover,
+.products__icon:focus {
+  background-color: $red;
+ transition-duration: 500ms;
+}
+
+
 .products__name {
   font-size: 20px;
   font-family: 'Titan One';
@@ -44,9 +52,8 @@
   .products__container {
     display: flex;
     flex-wrap: wrap;
-    width: 705px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px;
+   
   }
 }
 
@@ -179,7 +186,7 @@
 
 @media screen and (min-width: 768px) {
   .products__box--pink {
-    padding-top: 118px;
+    padding-top: 100px;
     position: relative;
     width: 224px;
     height: 473px;
@@ -216,7 +223,7 @@
     background-color: $pink;
     border-radius: 24px;
     margin-left: 0;
-    margin-right: 16px;
+    margin-right: 32px;
   }
 }
 
@@ -266,13 +273,14 @@
 
 @media screen and (min-width: 768px) {
   .products__box--peach {
-    padding-top: 118px;
+    padding-top: 100px;
     position: relative;
     width: 224px;
     height: 473px;
     margin-top: 148px;
     background-color: $peach;
     border-radius: 24px;
+    margin-left: 0px;
     margin-right: 16px;
   }
 }
@@ -302,7 +310,7 @@
     background-color: $peach;
     border-radius: 24px;
     margin-left: 0;
-    margin-right: 16px;
+    margin-right: 32px;
   }
 }
 
@@ -354,12 +362,13 @@
 
 @media screen and (min-width: 768px) {
   .products__box--green {
-    padding-top: 118px;
+    padding-top: 100px;
     position: relative;
     width: 224px;
     height: 473px;
     margin-top: 148px;
     background-color: $green;
+    margin-left: 0px;
     border-radius: 24px;
   }
 }
@@ -389,7 +398,7 @@
     background-color: $green;
     border-radius: 24px;
     margin-left: 0;
-    margin-right: 16px;
+    margin-right: 0px;
   }
 }
 
