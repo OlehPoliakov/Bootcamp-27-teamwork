@@ -7,7 +7,6 @@
 
 .item {
     margin: auto;
-    // position: relative;
     min-width: 308px;
     height: 515px;
     display: flex;
@@ -23,7 +22,7 @@
         margin: 0;
         min-width: 280px;
         height: 260px;
-        border-radius: 4px;
+        border-radius: 15px;
         background-color: #FAFAFA;
 
         & .shadow-effect__container {
