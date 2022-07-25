@@ -55,8 +55,8 @@
 @media screen and(max-width: 767px) {
     .burger {
         position: fixed;
-        top: 6%;
-        right: 6%;
+        top: 25;
+        right: 15;
     }
 }
 
@@ -150,13 +150,14 @@
         margin-left: 32px;
     }
 }
-
+.header__page {
+    position: relative;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .logo {
         margin-right: 293px;
     }
     .header__page {
-        position: relative;
         padding-top: 32px;
         display: flex;
         align-items: center;
@@ -175,8 +176,8 @@
 
     .burger__close-tab {
         position: fixed;
-        top: 17%;
-        right: 30%;
+        top: 25;
+        right: 15;
     }
     
     .burger {
@@ -280,7 +281,7 @@
     background-color: $pink;
     background-image: url(../images/icecream-head.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: 346px 410px;
 }
 
@@ -295,7 +296,7 @@
 
 @media screen and (max-width: 767px) {
     .title {
-        height: 100vh;
+        height: 45vh;
     }
 }
 
