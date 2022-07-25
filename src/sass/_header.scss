@@ -8,11 +8,15 @@
     
 }
 
+.header a {
+    text-decoration: none !important;
+}
+
 .logo__icon {
     width: 200px;
     height: 50px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .header__page {
         padding-top: 8px;
         display: flex;
@@ -23,17 +27,37 @@
         display: none;
     }
     .button__modal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 209px;
         height: 44px;
         margin-bottom: 32px;
         margin-top: 40px;
+        margin-left: auto;
+        margin-left: auto;
         &:hover {
             background-color: #ECEBEB;
         }
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        .button__modal {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 209px;
+                height: 44px;
+        
+                &:hover {
+                    background-color: #ECEBEB;
+                }
+            }
+    }
+
+
+@media screen and (max-width: 1199px) {
 
     .burger {
         display: inline-flex;
@@ -43,7 +67,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        z-index: 2;
+        z-index: 5;
         background-color: transparent;
 
         &__close {
@@ -68,16 +92,15 @@
     }
 
     .burger__modal {
+        width: 100vw;
+        height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
+        z-index: 4;
         overflow-y: scroll;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         background-color: #E17992;
 
         padding: 20px;
@@ -102,14 +125,13 @@
     }
 
     .button__modal {
-        display: block;
+        padding: 20px 50px;
+        margin-left: auto;
+        margin-right: auto;
         
         font-weight: 700;
         font-size: 16px;
         line-height: 1.3;
-        
-        align-items: center;
-        text-align: center;
         
         background-color: $white;
         color: $red;
@@ -127,10 +149,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .burger__modal {
-        top: 0;
-        left: 70vw;
-    }
     .logo {
         margin-right: 293px;
     }
@@ -145,8 +163,6 @@
             height: 44px;
         }
     .button__modal {
-        width: 186px;
-        height: 44px;
         margin-bottom: 32px;
         margin-top: 40px;
     }
@@ -247,7 +263,8 @@
 }
 
 .button__element {
-    color: $red;
+    fill: $red;
+    margin-left: 15px;
 }
 
 
@@ -255,7 +272,7 @@
 
 .title {
     background-color: $pink;
-    background-image: url(../images/icecream-mob@1x.png);
+    background-image: url(../images/icecream-head.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -266,85 +283,100 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .title {
-        background-image: url(../images/icecream-mob@2x.png);
+        background-image: url(../images/icecream-head@2x.png);
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
     .title {
-        background-image: url(../images/icecream-tab@1x.png);
-        background-position: center;
-        background-size: 335px 373px;
+        width: 346px;
+        height: 344px;
     }
+}
 
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .title {
-            background-image: url(../images/icecream-tab@2x.png);
-        }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .title {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
 .title__hero {
-    @media screen and (min-width: 320px) {
-        width: 162px;
-        font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
+    width: 162px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+@media screen and (min-width: 1200px) {
+    .title__hero {
+        width: 277px;
+        font-size: 38px;
         line-height: 1.15;
-        text-transform: uppercase;
-        color: $white;
-
-        padding-top: 136px;
-        margin-bottom: 20px;
-
-        .title__hero--color {
-            color: $red;
-            font-size: 48px;
-            line-height: 1;
-        }  
+        letter-spacing: 0.04em;
     } 
 }
 
-@media screen and (min-width: 320px) {
-    .title__item {
-            display: flex;
-    }
-        .title__link {
-            display: inline-block;
-            width: 62.4px;
-            height: 24px;
-            font-weight: 400;
-            font-size: 8px;
-            line-height: 1.25;
-            color: $white;
-            background-color: $red;
-            border-radius: 20px;
-            margin-right: 8px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-        }
-    
-        .title__link--color {
-            color: $red;
-            background-color: $white;
-            width: 82.8px;
-            height: 24px;
-        }
+.title__hero--color {
+    color: $red;
+    font-size: 48px;
+    line-height: 1;
+}   
+
+.title__item {
+    display: flex;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+.title__link {
+    width: 62.4px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $white;
+    background-color: $red;
+    border-radius: 20px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.title__link--color {
+    color: $red;
+    background-color: $white;
+    width: 82.8px;
+    height: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+    .title__link {
+        width: 107px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.28;
+    }
+    .title__link--color {
+        width: 138px;
+        height: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
     .location,
     .header-image {
         display: none;
-    }
-    .title__item {
-        padding-bottom: 158px;
     }
 }
 
@@ -360,8 +392,8 @@
 
 .container {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 32px !important;
+        padding-right: 32px !important;
     }
 }
 .milk-header {
@@ -380,19 +412,33 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            margin-bottom: 0;
         }
 }
 
 .milk-header__img {
     @media screen and (min-width: 768px) {
         margin-top: 20px;
-        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 213px;
+        height: 216px;
+        margin-top: 40px;
+        margin-bottom: 60px;
     }
 }
 
 .milk-header__text {
     @media screen and (min-width: 768px) {
-        width: 114px;
+        max-width: 122px;
+        margin: 0;
+        padding: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 200px;
+        font-size: 14px;
+        line-height: 1.42;
     }
 }
 
@@ -405,12 +451,23 @@
 
 .milk-header__icon {
     @media screen and (min-width: 768px) {
-        fill: $red;
         width: 18px;
         height: 18px;
         margin-top: 7px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: block;
     }
+
+    &:hover {
+        background-color: $red;
+        border-radius: 50%;
+        outline: 0;
+    }
+        @media screen and (min-width: 1200px) {
+            width: 26px;
+            height: 26px;
+            margin-top: 20px;
+        }
 }
 
 @media screen and (min-width: 768px) {
@@ -421,9 +478,10 @@
         .location__text {
             font-weight: 400;
             font-size: 8px;
-            line-height: 10px;
+            line-height: 1.25;
             color: $white;
             margin-bottom: 16px;
+            text-align: center;
     
             &:last-child {
                 margin-bottom: 0;
@@ -439,18 +497,49 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: $red;
+            z-index: 0;
         }
+
     .location__icon {
         position: absolute;
-        top: 0;
-        left: 50%;
+        top: -45%;
+        left: 55%;
+        z-index: -1;
+    }
+    .location__icon--size {
+        width: 18px;
+        height: 18px;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
+    .location__number {
+        font-size: 46px;
+        line-height: 1.15;
+        margin-bottom: 10px;
+    }
+    .location__text {
+        font-size: 14px;
+        line-height: 1.28px;
+    }
+    .location__icon--size {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
     .girl-header {
         display: block;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .girl-header {
+        width: 304px;
+        height: 241px;
+    }
+}
+
 
 
