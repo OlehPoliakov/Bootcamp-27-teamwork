@@ -5,6 +5,8 @@
     background-color: $pink;
     opacity: 0.7;
     z-index: 7;
+    left: 0;
+    right: 0;
 }
 
 .header a {
@@ -285,12 +287,10 @@
 // Title HERO
 
 .title {
+    min-width: 320px;
     padding-top: 150px;
     background-color: $pink;
-    min-height: 450px;
-    background-image: url(../images/icecream-mob.png);
-    background-repeat: no-repeat;
-    background-position: bottom 0 center;
+    
     // max-width: 100%;
     // @media screen and (max-width: 767px) {
     //     min-width: 320px;
@@ -317,13 +317,21 @@
 //     }
 // }
 
-
+@media screen and (max-width: 767px) {
+    .title {
+        min-height: 450px;
+        background-image: url(../images/icecream-mob.png);
+        background-repeat: no-repeat;
+        background-position: bottom 0 center;
+    }
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .title {
-        background-repeat: no-repeat; 
+    .title { 
+        background-image: url(../images/icecream-mob.png);
         background-position: bottom center;
+        background-repeat: no-repeat;
         background-size: 335px 373px;
     }
 }
@@ -331,9 +339,9 @@
 @media screen and (min-width: 1200px) {
     .title {
         background-image: url(../images/icecream-des.png);
-        background-repeat: no-repeat;
         background-position: bottom center;
         background-size: 534px 600px;
+        background-repeat: no-repeat;
 
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
