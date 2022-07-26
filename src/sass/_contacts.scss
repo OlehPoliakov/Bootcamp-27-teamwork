@@ -47,21 +47,21 @@
 .contacts-gallery__item {
     padding: 25px 32px;
     width: 280px;
-    height: 410px;
+    // height: 410px;
     margin: auto;
     background-color: $white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
     @media screen and (min-width: 768px) {
+        padding: 40px 40px;
         width: 224px;
-        height: 530px;
+        // height: 530px;
     }
 
     @media screen and (min-width: 1200px) {
         padding: 40px 40px;
         width: 368px;
-        height: 540px;
     }
 }
 .contacts-gallery__item:not(:last-child) {
@@ -170,6 +170,7 @@
     }
 }
 .contacts-gallery__working--time {
+    width: 180px;
     font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
@@ -177,15 +178,12 @@
     color: $pink;
 
     @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
         font-size: 14px;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 16px;
-    }
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 12px;
     }
 }
 .contacts-gallery__working--time:last-child {
